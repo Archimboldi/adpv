@@ -10,6 +10,10 @@
           <a-icon type="user" />
           {{ $t('menu.account.center') }}
         </a-menu-item>
+        <a-menu-item v-if="menu" key="style" @click="handleToSettings">
+          <a-icon type="setting" />
+          {{ $t('menu.account.style') }}
+        </a-menu-item>
         <a-menu-item v-if="menu" key="settings" @click="handleToSettings">
           <a-icon type="setting" />
           {{ $t('menu.account.settings') }}

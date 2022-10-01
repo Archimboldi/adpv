@@ -13,7 +13,7 @@
       广告代码 真实项目中请移除
       production remove this Ads
     -->
-    <ads v-if="isProPreviewSite && !collapsed"/>
+    <!-- <ads v-if="isProPreviewSite && !collapsed"/> -->
     <!-- Ads end -->
 
     <!-- 1.0.0+ 版本 pro-layout 提供 API，
@@ -62,15 +62,13 @@ import { asyncRouterMap } from '@/config/router.config.js'
 import defaultSettings from '@/config/defaultSettings'
 import RightContent from '@/components/GlobalHeader/RightContent'
 import GlobalFooter from '@/components/GlobalFooter'
-import Ads from '@/components/Other/CarbonAds'
 
 export default {
   name: 'BasicLayout',
   components: {
     SettingDrawer,
     RightContent,
-    GlobalFooter,
-    Ads
+    GlobalFooter
   },
   data () {
     return {
